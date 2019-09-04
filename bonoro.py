@@ -3,11 +3,16 @@ import time
 import hashlib
 import linecache
 
+bonoro = 'bonoro'
+name1 = 'i'
+
+
+
 def procedure():
    time.sleep(2.5)
 
 
-def process(code):
+def random_bonoro(str):
 
 	stringList = []
 
@@ -22,9 +27,10 @@ def process(code):
 	stringList.append(string1)
 	stringList.append(string2)
 
-	return stringList
+	return stringList	
 
-def principales():
-  process()
+def get_bonoro():
+	random_bonoro('bolsonaro')
+	return bonoro
 
-anagrama(principales())
+print(get_bonoro())
